@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export const Layout = ({ children }) => {
   return (
@@ -10,7 +11,12 @@ export const Layout = ({ children }) => {
       </Head>
 
       <header>
-        <h1>PAGE HEADER</h1>
+        <Link href="/">
+          <h1>HOME</h1>
+        </Link>
+        <Link href="Post">
+          <h1>POSTS</h1>
+        </Link>
       </header>
 
       <main>{children}</main>
