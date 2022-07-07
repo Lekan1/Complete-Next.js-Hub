@@ -12,6 +12,9 @@ export const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (Object.keys(formData).length == 0) {
+      return console.log("Don't have Form Data");
+    }
     console.log(formData);
   };
 
