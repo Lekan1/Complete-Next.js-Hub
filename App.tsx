@@ -1,23 +1,15 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { NativeBaseProvider, Button, Input, Spinner } from 'native-base';
+import { StyleSheet, View } from 'react-native';
+import { NativeBaseProvider } from 'native-base';
+import Onboard from './src/common/components/Onboard';
 
 const App = () => {
-    const [value, setValue] = React.useState<boolean>(false);
     return (
         <NativeBaseProvider>
+            <StatusBar style="auto" />
             <View style={styles.container}>
-                <Text>Hello World</Text>
-                <Button size={'lg'} isLoading={value} onPress={() => setValue(true)}>
-                    Button
-                </Button>
-                <Input placeholder="Type here" />
-                <Spinner />
-                <Spinner color="emerald.500" />
-                <Spinner color="warning.500" />
-                <Spinner color="indigo.500" />
-                <Spinner color="cyan.500" size="lg" />
+                <Onboard />
             </View>
         </NativeBaseProvider>
     );
@@ -26,7 +18,7 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000',
+        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
     },
