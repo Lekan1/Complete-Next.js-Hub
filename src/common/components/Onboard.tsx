@@ -13,26 +13,26 @@ import {
     Dimensions,
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
-const COLORS = { primary: '#282534', white: '#fff' };
+const COLORS = { primary: '#fff', white: '#336B6B' };
 
 const slides = [
     {
         id: '1',
         image: require('../../../assets/onboard1.png'),
-        title: 'Best Digital Solution',
-        subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Space',
+        subtitle: 'We bring you a comfortable space with the best furniture.',
     },
     {
         id: '2',
         image: require('../../../assets/onboard2.png'),
-        title: 'Achieve Your Goals',
-        subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Comfortable',
+        subtitle: 'We bring consumers the best, most comfortable products, so that users can enjoy the best way.',
     },
     {
         id: '3',
         image: require('../../../assets/onboard3.png'),
-        title: 'Increase Your Value',
-        subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Delivery',
+        subtitle: 'Wherever you are in this country, we will ship the furniture to you. Safe, fast and free.',
     },
 ];
 
